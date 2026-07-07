@@ -1,0 +1,27 @@
+[
+    {
+      "id": "1",
+      "name": "Greek Yogurt",
+      "brand": "Chobani",
+      "category": "Dairy",
+      "calories": 120,
+      "protein": 15,
+      "fiber": 0,
+      "sugar": 4,
+      "guidingStars": 3,
+      "stores": ["foodlion", "stopshop"]
+    },
+    {
+      "id": "2",
+      "name": "Watermelon Chunks",
+      "brand": "Store Brand",
+      "category": "Produce",
+      "calories": 35,
+      "protein": 1,
+      "fiber": 1,
+      "sugar": 7,
+      "guidingStars": 3,
+      "stores": ["foodlion"]
+    }
+  ]
+  
