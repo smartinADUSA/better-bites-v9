@@ -10,6 +10,9 @@ import ProductCard from "../components/ProductCard";
 import Pagination from "../components/Pagination";
 import StoreFilter from "../components/StoreFilter";
 import NutritionFilters from "../components/NutritionFilters";
+import {
+  isValidProduct,
+} from "../lib/validation";
 
 export default function Home() {
   const [query, setQuery] = useState("");
@@ -31,9 +34,13 @@ const [guidingStarsFilter,
 
 
   const ITEMS_PER_PAGE = 2;
+  
+ 
 
   const filteredProducts =
-  products.filter((item) => {
+  products
+    .filter(isValidProduct)
+    .filter((item) => {
     const matchesSearch =
       item.name
         .toLowerCase()

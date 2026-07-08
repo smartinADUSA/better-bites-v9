@@ -22,6 +22,59 @@
       "sugar": 7,
       "guidingStars": 3,
       "stores": ["foodlion"]
+    },
+    {
+      "id": "3",
+      "name": "Nature's Promise Granola",
+      "brand": "Nature's Promise",
+      "category": "Breakfast",
+      "calories": 180,
+      "protein": 8,
+      "fiber": 6,
+      "sugar": 9,
+      "guidingStars": 2,
+      "stores": ["hannaford"]
+    },
+    {
+      "id": "4",
+      "name": "String Cheese",
+      "brand": "Store Brand",
+      "category": "Dairy",
+      "calories": 80,
+      "protein": 7,
+      "fiber": 0,
+      "sugar": 1,
+      "guidingStars": 1,
+      "stores": ["giantfood"]
+    },
+    {
+      "id": "5",
+      "name": "Protein Shake",
+      "brand": "Premier Protein",
+      "category": "Beverages",
+      "calories": 160,
+      "protein": 30,
+      "fiber": 3,
+      "sugar": 1,
+      "guidingStars": 2,
+      "stores": [
+        "foodlion",
+        "stopshop",
+        "hannaford",
+        "giantfood",
+        "giantcompany"
+      ]
     }
+     ,{
+        "id": "999",
+        "name": "Watermelon Chunks",
+        "brand": "Store Brand",
+        "category": "Produce",
+        "calories": 35,
+        "protein": 60,
+        "fiber": 30,
+        "sugar": 3,
+        "guidingStars": 3,
+        "stores": ["foodlion"]
+      }
   ]
-  
