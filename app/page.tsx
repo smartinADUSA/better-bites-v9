@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import products from "../data/products-medium.json";
+import products from "../data/products-real-100.json";
 
 import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
