@@ -54,6 +54,23 @@ export function getWarnings(
     );
   }
 
+  if (product.protein > 50) {
+    warnings.push(
+      "Protein value unusually high"
+    );
+  }
+
+  if (product.fiber > 25) {
+    warnings.push(
+      "Fiber value unusually high"
+    );
+  }
+
+  if (product.sugar > 50) {
+    warnings.push(
+      "Sugar value unusually high"
+    );
+  }
+
   return warnings;
 }
-
