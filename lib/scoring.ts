@@ -28,8 +28,17 @@ export function getGLP1Score(
   }
 
   if (product.fiber >= 6) {
-    score += 40;
+    score += 30;
   }
 
-  return score;
+  if (product.guidingStars > 0) {
+    score += 20;
+  }
+
+  if (product.sugar <= 5) {
+    score += 10;
+  }
+
+  return Math.min(score, 100);
 }
+  

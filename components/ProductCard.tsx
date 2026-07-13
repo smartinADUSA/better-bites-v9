@@ -6,6 +6,17 @@ import {
   getWarnings,
 } from "../lib/validation";
 
+import ScoreBadge from "./ScoreBadge";
+import ProductExplanation from "./ProductExplanation";
+
+import {
+  getGLP1Score,
+} from "../lib/scoring";
+
+import {
+  getProductExplanation,
+} from "../lib/explanations";
+
 type Props = {
   product: Product;
 };
@@ -15,6 +26,14 @@ export default function ProductCard({
 }: Props) {
   const warnings =
     getWarnings(product);
+
+    const score =
+  getGLP1Score(product);
+
+const explanation =
+  getProductExplanation(
+    product
+  );
 
   return (
     <div
@@ -43,6 +62,9 @@ export default function ProductCard({
       <ProductTags
         product={product}
       />
+      <ScoreBadge
+  score={score}
+/>
 
       <StoreBadges
         stores={product.stores}
@@ -51,6 +73,10 @@ export default function ProductCard({
       <ProductWarnings
         warnings={warnings}
       />
+      <ProductExplanation
+  explanation={explanation}
+/>
+
     </div>
   );
 }
